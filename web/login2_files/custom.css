@@ -1,0 +1,1761 @@
+/* here you can put your own css to customize and override the theme */
+/*=============================总布局页==============================*/
+/*标志*/
+body
+{
+    font-family: "Helvetica Neue" ,Helvetica,Arial,sans-serif;
+}
+
+.ecommerce .site-logo
+{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+/*主菜单字体*/
+.ecommerce .header-navigation
+{
+    font: 19px 'Microsoft Yahei';
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/*顶部注册等信息*/
+.pre-header
+{
+    color: #616b76;
+    border-bottom: 1px solid #eee;
+    padding-top: 10px;
+    line-height: 1.2;
+    font-family: 'Open Sans' ,SimSun;
+    font-weight: 300;
+    background: #fff;
+}
+
+/*内容标题*/
+.ecommerce h1, .ecommerce h2, .ecommerce h5, .ecommerce h6
+{
+    font-family: 'Open Sans' , 'Microsoft Yahei';
+    margin: 0 0 10px;
+    text-transform: uppercase;
+}
+
+
+/*内容标题*/
+.ecommerce h4
+{
+    font-family: 'Open Sans' , 'Microsoft Yahei';
+    font-size: 14px;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+}
+
+/*内容标题*/
+.ecommerce h3
+{
+    font: 16px 'Microsoft Yahei';
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*标题分页*/
+.layerPItem
+{
+    border: 1px solid #eee;
+}
+
+.userMenu
+{
+    float: left;
+    left: 0;
+    display: none;
+}
+
+/*Step*/
+.steps-block h2, .ecommerce .steps-block h2
+{
+    color: #fff;
+    font-family: 'Open Sans' , Microsoft YaHei;
+    font-size: 32px;
+    margin-top: -8px;
+    line-height: 1.6;
+}
+
+.steps-block em
+{
+    font: normal 400 16px 'Opan Sans' , Microsoft YaHei;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+/*分标题*/
+.ecommerce .breadcrumb
+{
+    text-transform: uppercase;
+    font: 13px 'Open Sans' , Microsoft YaHei;
+}
+
+/*CommingSoon*/
+.divCommingSoon
+{
+    margin-top: 100px;
+    margin-left: 350px;
+    margin-bottom: 150px;
+}
+
+.page-404
+{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 125px;
+    font: 400 13px 'Open Sans' , Arial, sans-serif;
+}
+
+.page-404 .number
+{
+    position: relative;
+    top: 35px;
+    display: inline-block;
+    letter-spacing: -10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    line-height: 128px;
+    font-size: 128px;
+    font-weight: 300;
+    color: #67bd3c;
+    text-align: right;
+}
+
+.modal-title
+{
+    font-family: Microsoft YaHei;
+    font-size: 20px;
+}
+/*=============================首页===================================*/
+
+/*主页滑动栏*/
+.ls-slide4 .ls-mini-text a
+{
+    color: #fff;
+    font: 300 20% 'Open Sans' , Microsoft YaHei;
+    padding: 7px 20px 8px;
+    background: #A0C61D;
+    top: -20%;
+    position: relative;
+    float: left;
+}
+
+/*主页灰色跳转版*/
+.brands .owl-carousel
+{
+    margin-bottom: 41px;
+    padding: 0 75px;
+    background: #F1F1F1;
+    height: 200px;
+}
+
+/*导航版*/
+.divDirect
+{
+    background: #F1F1F1;
+    margin-bottom: 41px;
+    padding: 0 5%;
+    height: 200px;
+    font-family: Microsoft YaHei, arial;
+    color: #717171;
+}
+/*导航版单图片*/
+.divDirectImg
+{
+    display: inline;
+    background: #F1F1F1;
+    margin-left: 0px;
+    padding-left: 48px;
+    color: #717171;
+}
+
+/*导航版单图片*/
+.DirectImg
+{
+    width: 85%;
+    padding-top: 10px;
+}
+
+.divDirectText
+{
+    text-align: center;
+    display: inline;
+    background: #F1F1F1;
+    margin-left: 0px;
+    margin-top: -5px;
+    padding: 0 0px;
+    color: #717171;
+}
+
+.divDirectText2
+{
+    display: inline;
+    background: #F1F1F1;
+    margin-left: 17.5%;
+    padding: 0 0px;
+    color: #717171;
+}
+
+.divDirectText3
+{
+    display: inline-block;
+    background: #F1F1F1;
+    margin-left: 18%;
+    padding: 0 0px;
+    color: #717171;
+}
+
+.divDirectText4
+{
+    display: inline-block;
+    background: #F1F1F1;
+    margin-left: 26%;
+    padding: 0 0px;
+    color: #717171;
+}
+
+.divDirectPannel
+{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.divDirectPannel h2
+{
+    padding-left: 15px;
+}
+
+/*产品内容*/
+.product-item
+{
+    padding: 12px 12px 5px;
+    background: #fff;
+    position: relative;
+}
+
+/*问答内容*/
+.divAskPageMain
+{
+    background: #F1F1F1;
+    margin-left: -19px;
+    margin-right: -15px;
+    padding-right: 0px;
+}
+.divAskPage
+{
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-right: 25px;
+    margin-right: 0px;
+    line-height: 18px;
+    height: 222px;
+}
+
+.divAskPage li
+{
+    margin-top: 15px;
+}
+
+.divAskPage a
+{
+    color: #717171;
+    font-size: 14px;
+    font-family: Microsoft YaHei, arial;
+}
+
+.divAskText
+{
+    margin-left: 15px;
+    padding: 0 0px;
+    color: #717171;
+}
+
+/*说说专区
+.shop-index-carousel
+{
+    margin-left: 0px;
+}
+*/
+
+.portlet.light
+{
+    margin-left: 5px;
+    margin-right: 10px;
+    background: none;
+}
+
+.portlet.light.bordered
+{
+    background-color: #fff;
+}
+
+.divLast
+{
+    margin-bottom: 30px;
+}
+
+
+.divlastTitle
+{
+    margin-left: 0px;
+    padding: 0 0px;
+    color: #717171;
+}
+
+.divlastTitle2
+{
+    margin-left: 5px;
+    padding: 0 0px;
+    color: #717171;
+}
+
+/*带线框的区域*/
+.divLineFrame
+{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+.divLineContent
+{
+    border-top: 1px solid #e5e5e5;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 15px;
+    margin-right: -15px;
+}
+
+.divLineContent2
+{
+    border-top: 1px solid #e5e5e5;
+    padding-left: 30px;
+    padding-right: 0px;
+    margin-left: -15px;
+    margin-right: 10px;
+}
+
+.divLineContent3
+{
+    border: 1px solid #e5e5e5;
+    padding-left: 20px;
+    padding-right: 25px;
+    padding-top: 20px;
+    margin-left: -18px;
+    margin-right: 18px;
+    background: none;
+}
+
+.divPortlet
+{
+    margin-left: 5px;
+    margin-right: 10px;
+    background: none;
+    margin-bottom: 5px;
+}
+
+.general-item-list > .item > .divBody
+{
+    color: #3e4d5c;
+}
+
+/*=============================装修攻略===================================*/
+/*装修攻略*/
+.ecommerce .divTabs
+{
+    text-transform: uppercase;
+    font: 16px/1 'Open Sans' , Microsoft YaHei;
+}
+.content-page-blog
+{
+    background: #fff;
+    padding: s0px;
+    margin-right: 10px;
+}
+
+.blog-posts .titleText
+{
+    font-family: 'Open Sans' , Microsoft YaHei;
+    color: #767f88;
+    font-size: 20px;
+}
+
+.blog-info li
+{
+    padding: 0;
+    color: #555;
+    font-size: 13px;
+    margin-top: -1px;
+    margin-right: 10px;
+    display: inline-block;
+    font-family: 'Open Sans' , Microsoft YaHei;
+}
+
+.blog-posts p
+{
+    font-family: 'Open Sans' , Microsoft YaHei;
+    font-size: 14px;
+}
+
+.blog-posts hr.diaryHr
+{
+    margin: 20px 0;
+}
+
+.blog-item
+{
+    font-weight: 400;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-right: 30px;
+    font-size: 15px;
+    line-height: 1.7;
+    font: 'Microsoft Yahei' , "PT Sans Narrow";
+    font-family: 'Microsoft Yahei';
+    background: #fff;
+}
+
+/*Tab页*/
+.tab-content
+{
+    font: 'Microsoft Yahei' , "PT Sans Narrow";
+    font-size: 16px;
+    background: #FFFFFF;
+    padding: 20px 0px 0px;
+}
+
+.divComments
+{
+    font-size: 13px;
+}
+
+.blog-item h4.media-heading
+{
+    font-size: 14px;
+}
+
+.blog-talks
+{
+    font-family: 'Microsoft Yahei';
+}
+
+.imgSideHead
+{
+    border-radius: 50% !important;
+    border: 1px solid #ECEBEB;
+}
+
+.recent-news h3
+{
+    line-height: 30px !important;
+    text-align: left !important;
+}
+
+
+.tab-SideContent
+{
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.blog-item .media
+{
+    min-height: 65px;
+}
+
+.media-body
+{
+    width: 1500px;
+}
+
+.pagination .active > a, .pagination .active > a:hover
+{
+    background: #eee !important;
+    border-color: #dddddd !important;
+    color: #333 !important;
+}
+
+.pagination > li > a, .pagination > li > span, .pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span
+{
+    border-radius: 25px !important;
+    border: none !important;
+    color: #868c93 !important;
+}
+
+/*=============================景观详细信息=================================*/
+/*景观详细信息*/
+.divTab
+{
+    background: none;
+}
+
+.ecommerce .sightTab
+{
+    font: 16px/1 'Microsoft Yahei' , "PT Sans Narrow";
+}
+
+.pi-SightInfo
+{
+    font: 12px 'Microsoft Yahei' , "PT Sans Narrow";
+    float: left;
+    padding-top: 5px;
+}
+
+.pi-SightInfo2
+{
+    font: 12px 'Microsoft Yahei' , "PT Sans Narrow";
+    float: right;
+    padding-top: 5px;
+}
+
+.divSightInfo
+{
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+.ulSightInfo li
+{
+    color: #666;
+    font-size: 13px;
+    line-height: 22px;
+    padding: 7px 15px;
+    border-bottom: solid 1px #f5f9e7;
+}
+
+.pricing-footer
+{
+    color: #666;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: left;
+    padding: 0 15px 19px;
+    line-height: 22px;
+}
+
+.pricing-footer .btn
+{
+    margin-left: 60px;
+}
+
+/*=============================随便写写===================================*/
+/*随便写写*/
+.divTabDiaryShot
+{
+    padding: 10px 0px;
+}
+
+.blog-item .divDiaryShort
+{
+    border-bottom: solid 1px #ECEBEB;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.blog-item .divDiaryShortBody
+{
+    font-size: 13px;
+    padding-left: 20px;
+    position: relative;
+    padding-top: 0;
+}
+
+.blog-item h4.divDiaryShortHeading
+{
+    font-size: 20px;
+    position: relative;
+    padding-top: 0;
+}
+
+.blog-item .divBloginfo
+{
+    margin: 0px 0;
+    padding: 0px 0;
+    border-top: solid 0px #ECEBEB;
+    border-bottom: solid 0px #ECEBEB;
+}
+
+.blog-item img.diaryShortImg
+{
+    top: 2px;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border-radius: 50% !important;
+    overflow: hidden;
+    border: 1px solid #ECEBEB;
+}
+
+.imgShortList
+{
+    padding-right: 5px;
+    border-radius: 50%;
+}
+
+.divShortImport
+{
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #f8f8f8;
+}
+/*================================时间轴======================================*/
+.TimelineTitleText
+{
+    font-family: 'Open Sans' , Microsoft YaHei;
+    color: #767f88;
+    font-size: 20px;
+}
+
+.divTimelineBody
+{
+    position: relative;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 110px;
+    background-color: #eee;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.divTimelineArrow
+{
+    position: absolute;
+    top: 30px;
+    left: -14px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 14px 14px 14px 0;
+    border-color: transparent #eee transparent transparent;
+}
+
+.timeline-body-title
+{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Microsoft Yahei';
+}
+
+.font-grey-cascade
+{
+    color: #717171 !important;
+    font-family: 'Microsoft Yahei';
+    line-height: 22px;
+}
+
+.imgTimeLine
+{
+    width: 80px;
+    border: 4px #eee solid;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+}
+/*================================登录模式======================================*/
+.ecommerce .sidebar .list-group-item
+{
+    background: rgba(244,244,244,0.5);
+    font-size: 16px;
+    font-family: 'Microsoft Yahei';
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 5px;
+}
+
+.ecommerce .sidebar .selected
+{
+    color: #67bd3c;
+}
+
+.sidebar-menu .fa-angle-right
+{
+    position: relative;
+    top: 1px;
+    margin-right: 2px;
+    float: left;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.login
+{
+}
+
+.login .logo
+{
+    margin: 60px auto 20px auto;
+    padding: 15px;
+    text-align: center;
+    background-color: #444 !important;
+}
+
+.login .content
+{
+    background-color: #fff;
+    width: 360px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 0px;
+}
+
+.login .content .form-title
+{
+    font: 19px 'Microsoft Yahei';
+    margin-bottom: 25px;
+}
+
+.login .content h3
+{
+    color: #000;
+    font-family: "Open Sans" , sans-serif;
+    font-size: 23px;
+}
+
+.login .content .login-form, .login .content .forget-form
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.login .form-group
+{
+    margin-bottom: 15px;
+}
+
+.login .content .input-icon
+{
+    border-left: 2px solid #44B6AE !important;
+    position: relative;
+}
+
+.login .control-label
+{
+    display: none;
+    margin-top: 1px;
+}
+
+.login label
+{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.input-icon > i
+{
+    color: #ccc;
+    display: block;
+    position: absolute;
+    margin: 11px 2px 4px 10px;
+    z-index: 3;
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.login .content .input-icon .form-control
+{
+    border-left: 0;
+}
+.input-icon > .form-control
+{
+    padding-left: 33px;
+}
+.form-control
+{
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    border-radius: 4px;
+}
+
+.login .content .form-actions
+{
+    background-color: #fff;
+    clear: both;
+    border: 0px;
+    border-bottom: 1px solid #eee;
+    padding: 0px 30px 25px 30px;
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+.login .content .form-actions .checkbox
+{
+    font-family: 'Microsoft Yahei';
+    margin-top: 8px;
+    display: inline-block;
+}
+.login .content .form-actions .checkbox
+{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.login .content .forget-password
+{
+    margin-top: 25px;
+}
+
+.login .content h4
+{
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: 'Open Sans' , 'Microsoft Yahei';
+    font-size: 14px;
+}
+
+.login .content .create-account
+{
+    border-top: 1px dotted #eee;
+    padding-top: 10px;
+    margin-top: 15px;
+}
+
+.login .content p
+{
+    color: #222;
+    margin: 0 0 10px;
+    font-family: 'Microsoft Yahei';
+}
+
+.c-content-list-adjusted
+{
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.c-content-login-form .modal-dialog .modal-content .modal-body .c-content-divider
+{
+    text-align: center;
+}
+
+.c-content-list-adjusted > li
+{
+    display: table-cell;
+    width: 1%;
+    padding-right: 3px;
+    font-size: 13px;
+}
+
+
+.c-content-list-adjusted .btn
+{
+    outline: none !important;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    padding: 0px 6px 0px 3px;
+    font-size: 13px;
+    font-family: 'Microsoft Yahei';
+}
+
+.c-content-list-adjusted a:hover
+{
+    color: #eee;
+}
+
+.btn-social > :first-child
+{
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 32px;
+    line-height: 30px;
+    text-align: center;
+    border-right: 1px solid rgba(0,0,0,0.2);
+    font-size: 14px;
+}
+
+.btn-social
+{
+    padding-left: 40px;
+    height: 33px;
+}
+
+.btn-qq
+{
+    color: #fff;
+    background-color: #55acee;
+    border-color: rgba(0,0,0,0.2);
+}
+
+.btn-weixin
+{
+    color: #fff;
+    background-color: #67bd3c;
+    border-color: rgba(0,0,0,0.2);
+}
+
+.btn-weibo
+{
+    color: #fff;
+    background-color: #dd4b39;
+    border-color: rgba(0,0,0,0.2);
+}
+
+.login .form-control
+{
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+/*================================管理模式======================================*/
+.portlet.box.blue-hoki > .portlet-title > .caption
+{
+    color: #FFFFFF;
+    font: 15px 'Microsoft Yahei' , "PT Sans Narrow";
+}
+
+.portlet.light > .portlet-title > .caption
+{
+    font: 15px 'Microsoft Yahei' , "PT Sans Narrow";
+}
+
+.divAdminTitle
+{
+    font: 21px 'Microsoft Yahei' , "PT Sans Narrow";
+}
+
+.divAdminSmallTitle
+{
+    font: 15px 'Microsoft Yahei' , "PT Sans Narrow";
+}
+
+.input-group .form-control:first-child
+{
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.input-group .form-control:last-child
+{
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.form-control
+{
+    border-radius: 4px !important;
+}
+
+/*================================景观详情======================================*/
+.divSightSide
+{
+    border: 1px solid #eee;
+    background: #fff;
+    width: 260px;
+    margin-left: 12px;
+}
+
+
+/*================================One Page======================================*/
+.divOnePageImg
+{
+    margin-top: 20px;
+}
+
+.header.headNotFiexd
+{
+    min-height: 100px !important;
+}
+
+
+.header.fixNav
+{
+    min-height: 65px !important;
+    background: rgba(255,255,255,1);
+}
+
+.header-mobi-ext li
+{
+    margin: 0 0 0 10px;
+}
+
+.header-mobi-ext .site-logo
+{
+    margin: 40px 0 37px 0;
+    padding-top: 0px;
+}
+
+.fixNav .site-logo
+{
+    margin: 22px 0 19px 0;
+}
+
+.header-navigation
+{
+    padding: 0 0 0 0px;
+}
+
+.o-link
+{
+    padding: 41px 15px 39px 15px;
+}
+
+li span.sep
+{
+    top: 0;
+    width: 1px;
+    height: 26px;
+    background: #eaeaea;
+    position: relative;
+    margin: 0 18px 0 16px;
+    display: inline-block;
+}
+
+.fixNav .o-link
+{
+    padding: 23px 15px 21px 15px;
+}
+
+.c-layout-breadcrumbs-1.c-bgimage
+{
+    margin-top: 100px;
+    padding: 70px 0;
+}
+
+.c-layout-breadcrumbs-1.c-bgimage h3
+{
+    font: 400 22px 'Microsoft Yahei' , "PT Sans Narrow";
+}
+
+.c-bg-img-center
+{
+    background-repeat: no-repeat;
+}
+
+.c-layout-breadcrumbs-1 .c-page-title.c-pull-left
+{
+    float: left;
+}
+
+.c-content-blog-post-card-1-grid .c-content-blog-post-card-1
+{
+    margin-bottom: 30px;
+}
+
+.c-content-blog-post-card-1.c-bordered
+{
+    border: 1px solid #eeeeee;
+}
+
+.c-content-blog-post-card-1.c-option-2 .c-body
+{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    background: #fff;
+}
+
+.c-content-blog-post-card-1 .c-body .c-title
+{
+    border-top: 1px solid #eeeeee;
+    padding-top: 20px;
+    font-size: 19px;
+    font-weight: 400;
+    color: #3f444a;
+    margin-bottom: 20px;
+    font-family: 'Microsoft Yahei';
+}
+.c-font-uppercase
+{
+    text-transform: uppercase;
+}
+.c-font-bold
+{
+    font-weight: 600 !important;
+    color: #3f444a;
+}
+
+.c-content-blog-post-card-1 .c-body .c-title a
+{
+    color: #3f444a;
+}
+
+.c-content-blog-post-card-1 .c-body .c-panel
+{
+    padding: 5px 0;
+    border-top: 1px solid #eeeeee;
+}
+
+.c-content-blog-post-card-1 .c-body p
+{
+    display: block;
+    clear: both;
+    padding: 10px 0 0 0;
+    color: #5c6873;
+    line-height: 25px;
+}
+
+/*================================管理页======================================*/
+.vansionsAdmin .sightTab
+{
+    font: 16px/1 'Microsoft Yahei' , "PT Sans Narrow";
+    border-bottom: 1px solid #ddd;
+}
+
+.vansionsAdmin .nav-tabs
+{
+    text-transform: uppercase;
+}
+.vansionsAdmin .nav-tabs
+{
+    border-color: #67bd3c;
+}
+.vansionsAdmin .nav-tabs
+{
+    border-color: #e6400c;
+    padding-bottom: 1px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.nav-tabs, .nav-pills
+{
+    margin-bottom: 10px;
+}
+.vansionsAdmin .nav-tabs
+{
+    border-bottom: 1px solid #ddd;
+}
+.vansionsAdmin .nav
+{
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.vansionsAdmin .divPicList
+{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.vansionsAdmin .divTopBtn
+{
+    margin: 5px 0px 10px 0px;
+}
+
+/*内容标题*/
+.vansionsAdmin h1
+{
+    font-size: 18px !important;
+    font-family: 'Open Sans' , 'Microsoft Yahei';
+    margin: 0 0 10px;
+    text-transform: uppercase;
+}
+
+/*内容标题*/
+.vansionsAdmin h2, .vansionsAdmin h5, .vansionsAdmin h6
+{
+    font-family: 'Open Sans' , 'Microsoft Yahei';
+    margin: 0 0 10px;
+    text-transform: uppercase;
+}
+
+.vansionsAdmin h3
+{
+    font: 16px 'Microsoft Yahei';
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.vansionsAdmin .page-head .page-title
+{
+    display: inline-block;
+    float: left;
+    padding: 14px 0;
+}
+
+.vansionsAdmin .pricing-content li i
+{
+    color: #428bca;
+}
+
+.vansionsAdmin .divPicInfo
+{
+    background: #A0C61D;
+}
+
+.vansionsAdmin .divTopBtn2
+{
+    margin: 0px 0px 5px 0px;
+    padding-right: 0px;
+    text-align: right;
+}
+
+.vansionsAdmin .topBtn
+{
+}
+
+.vansionsAdmin .divPage
+{
+    padding-right: 0px;
+    text-align: right;
+}
+
+.vansionsAdmin thead
+{
+    font-family: 'Open Sans' , 'Microsoft Yahei';
+    font-size: 12px;
+}
+
+.vansionsAdmin .portlet.box .portlet-body
+{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.sightAdmin-row
+{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.sightAdmin-product-item
+{
+    padding: 0px;
+    background: #fff;
+    position: relative;
+}
+
+.vansionsAdmin .divSightPage
+{
+    padding-right: 15px;
+    text-align: right;
+}
+
+.vansionsAdmin .divSightTitle
+{
+    margin-top: 10px;
+    font: 14px 'Microsoft Yahei';
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.vansionsAdmin .form-actions
+{
+    padding: 20px 10px;
+    margin: 0;
+    background-color: #f5f5f5;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 0;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
+/*================================图片大小======================================*/
+.imgJscropDiv
+{
+    width: 450px;
+    height: 450px;
+    border: 0.5px solid #e7e7eb;
+    padding-left: 1px !important;
+    background-color: #f4f5f9;
+}
+
+.imgJscropStyle
+{
+    width: 100% !important;
+    height: auto !important;
+}
+
+.cbp-popup-navigation-wrap
+{
+    width: 100%;
+    z-index: 10006;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 60px;
+    position: fixed;
+    top: 0 !important;
+    left: 0;
+}
+
+.cbp-popup-wrap:before
+{
+    content: "";
+    display: inline-block;
+    height: 0%;
+    vertical-align: middle;
+}
+
+.cbp-l-filters-alignCenter
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    font: 400 16px/21px sans-serif;
+    color: #000;
+    display: block;
+}
+
+.cbp-l-filters-alignCenter .cbp-filter-item
+{
+    color: #000;
+    cursor: pointer;
+    font: 400 16px/21px 'Microsoft Yahei' , "Open Sans" , sans-serif;
+    padding: 0 12px;
+    transition: all .3s ease-in-out;
+    position: relative;
+    overflow: visible;
+    margin: 0px 0 0;
+    display: inline-block;
+    padding-top: 8px;
+}
+
+.cbp-l-filters-alignCenter .project-Link
+{
+    border-top: 2px solid #32c5d2;
+}
+
+.cbp-l-filters-alignCenter .project-Link-child
+{
+    color: #000 !important;
+}
+
+.cbp-popup-navigation-wrap .cbp-popup-close
+{
+    background: url('../Img/cbp-sprite.png') no-repeat scroll -92px -92px transparent;
+    height: 44px;
+    width: 44px;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    border: medium none;
+    position: absolute;
+    cursor: pointer;
+    outline: 0;
+    -webkit-user-select: none;
+    transform: scale(0.8);
+}
+
+.cbp-popup-navigation-wrap .cbp-popup-next
+{
+    display: block;
+    background: url('../Img/cbp-sprite.png') no-repeat scroll -46px -92px transparent;
+    width: 44px;
+    height: 44px;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 108px;
+    padding: 0;
+    border: medium none;
+    position: absolute;
+    cursor: pointer;
+    outline: 0;
+    -webkit-user-select: none;
+    transform: scale(0.8);
+}
+
+.cbp-nav-next:after, .cbp-nav-prev:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: url("../img/cbp-sprite.png") no-repeat;
+    height: 10px;
+    width: 7px;
+}
+
+.cbp-popup-navigation-wrap .cbp-popup-prev
+{
+    display: block;
+    background: url('../Img/cbp-sprite.png') no-repeat scroll 0 -92px transparent;
+    width: 44px;
+    height: 44px;
+    margin: auto;
+    top: 0;
+    right: 108px;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    border: medium none;
+    position: absolute;
+    cursor: pointer;
+    outline: 0;
+    -webkit-user-select: none;
+    transform: scale(0.8);
+}
+
+/*================================产品详情======================================*/
+.cbp-popup-wrap
+{
+    z-index: 0;
+    background: #fff;
+    height: 100%;
+    transition: left .6s ease-in-out;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0 10px;
+    display: block;
+}
+
+.cbp-l-project
+{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin-top: 105px;
+    max-width: 1024px;
+    margin-bottom: 110px;
+}
+
+.cbp-l-project-title
+{
+    color: #3f444a;
+    font-family: 'Microsoft Yahei' , sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.cbp-l-project-subtitle
+{
+    font-family: 'Microsoft Yahei' , sans-serif;
+    margin-top: 2px;
+    font-size: 14px;
+    color: #626a73;
+    margin: 0 auto 50px;
+    max-width: 500px;
+    text-align: center;
+    display: block;
+}
+
+.cbp-l-project .imgMain
+{
+}
+
+.cbp-l-project .cbp-popup-prev
+{
+    background: url('../Img/cbp-sprite.png') no-repeat scroll 0 0 transparent;
+    height: 44px;
+    width: 44px;
+    left: 10px;
+    position: absolute;
+    transform: scale(0.8);
+    cursor: pointer;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.cbp-l-project .cbp-popup-next
+{
+    background: url('../Img/cbp-sprite.png') no-repeat scroll -46px 0 transparent;
+    height: 44px;
+    width: 44px;
+    right: 10px;
+    position: absolute;
+    transform: scale(0.8);
+    cursor: pointer;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.cbp-l-project-container
+{
+    margin: 40px 0;
+    overflow: hidden;
+    clear: both;
+    text-align: left;
+    bottom: 200px;
+}
+
+.cbp-l-project-desc
+{
+    float: left;
+    width: 68%;
+    display: block;
+    font-family: 'Microsoft Yahei' , sans-serif;
+}
+
+.cbp-l-project-desc-title, .cbp-l-project-details-title
+{
+    margin-bottom: 40px;
+    border-bottom: 0;
+    display: block;
+    position: relative;
+    overflow: visible;
+}
+
+.cbp-l-project-desc-title:before, .cbp-l-project-details-title:before
+{
+    background: #32c5d2;
+    position: absolute;
+    top: 50px;
+    content: '';
+    width: 20px;
+    height: 3px;
+    display: block;
+}
+
+.cbp-l-project-desc-title span, .cbp-l-project-details-title span
+{
+    font: 400 16px/36px 'Microsoft Yahei' , sans-serif;
+    display: inline-block;
+    color: #3f444a;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 0;
+    margin: 5px 0 -1px 0;
+    padding: 0 5px 0 0;
+}
+
+.cbp-l-project-desc-text
+{
+    font-family: 'Microsoft Yahei' , sans-serif;
+    color: #626a73;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+
+.cbp-l-project-details
+{
+    float: right;
+    width: 30%;
+    padding-left: 40px;
+    margin-bottom: 15px;
+    text-align: left;
+    display: block;
+    font-family: 'Microsoft Yahei' , sans-serif;
+}
+
+.cbp-l-project-details-list
+{
+    list-style: none;
+    margin-left: -40px;
+}
+
+.cbp-l-project-details-list > li:first-child
+{
+    padding-top: 0;
+}
+
+.cbp-l-project-details-list > li
+{
+    font-family: 'Microsoft Yahei' , sans-serif;
+    padding: 5px 0;
+    margin: 0;
+    color: #6e7781;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.cbp-l-project-details-list > li, .cbp-l-project-details-list > div
+{
+    border-bottom: 1px dotted #DFDFDF;
+    font: 400 13px/30px 'Microsoft Yahei' , sans-serif;
+}
+
+.cbp-l-project-details-list > li > strong
+{
+    color: #4b5158;
+    font-family: 'Microsoft Yahei' , sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.cbp-l-project-details-list strong
+{
+    display: inline-block;
+    min-width: 100px;
+}
+
+.cbp-l-project-blog-item
+{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.c-content-box.c-size-md
+{
+    padding: 60px 0;
+}
+
+.c-content-line-icon.c-theme
+{
+    background-image: url(../../img/cplTitle_green.png);
+}
+.c-content-line-icon.c-icon-screen-chart
+{
+    background-position: 0px -1300%;
+}
+
+.c-content-line-icon.c-icon-support
+{
+    background-position: 0px -2500%;
+}
+
+.c-content-line-icon.c-icon-bulb
+{
+    background-position: 0px 1200%;
+}
+
+.c-content-feature-1 > h3
+{
+    font-size: 30px;
+    color: #3f444a;
+    font-weight: 500;
+    margin: 30px 0 25px 0;
+}
+
+.c-content-feature-1 p
+{
+    font-size: 13px;
+    color: #5c6873;
+    font-family: 'Microsoft Yahei' , sans-serif;
+    line-height: 20px;
+}
+
+.c-content-line-icon
+{
+    background-image: url(../img/cplTitle_green.png);
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+}
+
+.c-content-tab-2 > .c-tab-content .c-tab-pane > .btn
+{
+    margin-top: 12px;
+}
+
+.c-theme-btn.btn
+{
+    color: #ffffff;
+    background: #32c5d2;
+    border-color: #32c5d2;
+    font-size: 14px;
+    font-family: 'Microsoft Yahei' , sans-serif;
+}
+
+.cbp-l-project-related-wrap
+{
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    margin: 0;
+}
+
+.cbp-l-project-related-item
+{
+    margin-right: 5%;
+    max-width: 30%;
+    float: left;
+}
+
+.cbp-l-project-related-item:last-child
+{
+    margin-right: 0;
+}
+
+.cbp-l-project-related-wrap img, .cbp-l-inline img
+{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.cbp-l-project-related-title
+{
+    font-family: 'Microsoft Yahei' , sans-serif;
+    color: #626a73;
+    font-size: 16px;
+    color: #474747;
+    margin-top: 20px;
+}
+
+.projectItemUl
+{
+    padding: 8px 8px 5px;
+    border: 1px solid #e1e1e1;
+}
+
+.projectItemUl h3
+{
+    font: 14px 'Microsoft Yahei';
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.projectItemUl li
+{
+    line-height: 12px;
+    padding: 5px 5px;
+    border-bottom: solid 0px #f5f9e7;
+}
+
+.projectItemUl .pricing-footer .btn
+{
+    margin-left: 18px;
+    font-size: 12px;
+}
+
+.hover-effect
+{
+    border: 3px solid #44b1c1;
+}
+
+.hover-effect h4
+{
+    color: #44b1c1;
+}

@@ -1,0 +1,179 @@
+<!-- saved from url=(0083)http://webapplayers.com/inspinia_admin-v2.7.1/Angular/views/ecommerce_payments.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body><div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Modbus连接方案</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="http://webapplayers.com/inspinia_admin-v2.7.1/Angular/views/index.html">主页</a>
+            </li>
+            <li>
+                <a>基础信息</a>
+            </li>
+            <li class="active">
+                <strong>Modbus连接方案</strong>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight" ng-controller="ahathallan_modbus_scheme_info">
+    <div class="row">
+        <form method="get" class="form-horizontal">
+        <div class="col-lg-12" style="position: relative;min-height: 1px;padding-right: 5px;padding-left: 5px;">
+
+            <div class="ibox">
+                <div class="ibox-title">
+                    设备信息
+                </div>
+                <div class="ibox-content">
+                    <div class="panel-body">
+
+                        <div class="row" style="padding-top:30px;padding-bottom:30px;">
+                            <div class="col-md-1">
+
+                            </div>
+                            <div class="col-md-9">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Modbus方案名称</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="Number" placeholder="方案名称" ng-model="Device_Name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Modbus方案详情</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="nameCard" placeholder="方案详情"  ng-readonly="is_update" ng-model="Device_info">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Modbus方案类别</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="nameCard" placeholder="方案类别"  ng-readonly="is_update" ng-model="Device_type">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-1">
+                                    </div>
+                                    <div class="col-xs-5" style="margin-left:16px;">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">站号</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" touch-spin spin-options="spin_BaudRate" ng-model="SlaveId">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1"></div>
+                                    <div class="col-xs-5">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">波特率</label>
+                                            <div class="col-sm-10">
+                                                <select class="form-control" ng-options="c.BaudRate_no as c.BaudRate_Value for c in BaudRate_list" ng-model="BaudRate_value">
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-1">
+                                    </div>
+                                    <div class="col-xs-5" style="margin-left:16px;">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">校验位</label>
+                                            <div class="col-sm-10">
+                                                <select class="form-control" ng-options="c.Parity_no as c.Parity_Value for c in Parity_list" ng-model="Parity_value">
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1"></div>
+                                    <div class="col-xs-5">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">数据位</label>
+                                            <div class="col-sm-10">
+                                                <select class="form-control" ng-options="c.DataBits_no as c.DataBits_value for c in DataBits_list" name="account" ng-model="DataBits_value">
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-1">
+                                    </div>
+                                    <div class="col-xs-5" style="margin-left:16px;">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">停止位</label>
+                                            <div class="col-sm-10">
+                                                <select class="form-control" ng-options="c.StopBits_no as c.StopBits_value for c in StopBits_list" name="account" ng-model="StopBits_value">
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top:20px;">
+<!--                                    <div class="col-xs-2">-->
+<!--                                        <button class="btn btn-primary" type="button" ng-click="loadInfo(1)">Load Data!</button>-->
+<!--                                    </div>-->
+                                    <div class="col-xs-2">
+
+                                    </div>
+                                    <div class="col-xs-3 btn-group">
+                                        <a class="btn btn-primary" type="submit" ng-click="save_modbus_sheme_info()">保存</a>
+                                        <a style="margin-left:10px;"  type="submit" class="btn btn-danger" ng-click="delete_modbus_sheme_info()">删除</a>
+                                        <a class="btn btn-outline btn-primary" style="margin-left:10px;"  type="submit" href="web#/tables/ahathallan_modbus_scheme_lst">返回</a>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-md-2">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-lg-12" style="position: relative;min-height: 1px;padding-right: 5px;padding-left: 5px;">
+            <div class="col-md-3" style="position: relative;min-height: 1px;padding-right: 5px;padding-left: 5px;" ng-repeat="scheme_address in scheme_address_list">
+                <div class="ibox">
+                    <div class="ibox-content">
+                        <h4 style="margin-top:3px;margin-bottom:3px;">{{scheme_address.Address}}</h4>
+                        <h1 class="no-margins" style="padding-top:3px;padding-bottom:3px;">{{scheme_address.Address_Name}}</h1>
+                        <div class="stat-percent font-bold text-navy">{{scheme_address.Function_Name}}<i class="fa fa-crop"></i></div>
+                        <small>{{scheme_address.Modbus_Data_type_Name}}</small>
+                        <hr>
+                        <div class="m-t-sm">
+                            <div class="btn-group">
+                                <a ng-href="{{scheme_address.Device_address_url}}" class="btn btn-primary btn-sm"><i class="fa fa-shopping-cart"></i>修改</a>
+                                <a style="margin-left: 5px;" ng-click="delete_modbus_address_info(scheme_address.Address_No)" class="btn btn-white btn-sm"> 删除</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3" style="position: relative;min-height: 1px;padding-right: 5px;padding-left: 5px;">
+                <div class="file" style="margin-right: -5px;">
+                    <a ng-href="{{Device_url}}">
+                        <div class="icon" style="height:185px;">
+                            <i class="fa fa-plus" style="margin-top:40px;"></i>
+                        </div>
+                    </a>
+                </div>
+            <hr>
+        </div>
+        </form>
+    </div>
+
+</div></body></html>

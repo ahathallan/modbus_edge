@@ -1,0 +1,105 @@
+<!-- saved from url=(0083)http://webapplayers.com/inspinia_admin-v2.7.1/Angular/views/ecommerce_payments.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body><div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>设备信息</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="http://webapplayers.com/inspinia_admin-v2.7.1/Angular/views/index.html">主页</a>
+            </li>
+            <li>
+                <a>设备监控</a>
+            </li>
+            <li class="active">
+                <strong>设备信息</strong>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight" ng-controller="ahathallan_modbus_device_info">
+    <div class="row">
+        <form method="get" class="form-horizontal">
+        <div class="col-lg-12" style="position: relative;min-height: 1px;padding-right: 5px;padding-left: 5px;">
+
+            <div class="ibox">
+                <div class="ibox-title">
+                    设备信息
+                </div>
+                <div class="ibox-content">
+                    <div class="panel-body">
+
+                        <div class="row" style="padding-top:30px;padding-bottom:30px;">
+                            <div class="col-md-1">
+
+                            </div>
+                            <div class="col-md-9">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">设备编号</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="nameCard" placeholder="设备编号"  ng-readonly="is_update" ng-model="Dev_No">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">设备名称</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="Number" placeholder="设备名称" ng-model="Dev_Name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Modbus方案</label>
+                                            <div class="col-sm-10">
+                                                <select class="form-control" ng-options="c.Scheme_code as c.Device_Name for c in scheme_list" name="account" ng-model="scheme_value">
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">串口号</label>
+                                            <div class="col-sm-10">
+                                                <select class="form-control" ng-options="c.Serial_no as c.Serial_Value for c in Serial_list" ng-model="Serial">
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+<!--                                    <div class="col-xs-2">-->
+<!--                                        <button class="btn btn-primary" type="button" ng-click="loadInfo(1)">Load Data!</button>-->
+<!--                                    </div>-->
+                                    <div class="col-xs-2">
+
+                                    </div>
+                                    <div class="col-xs-3" style="margin-top:20px;">
+                                        <button class="btn btn-success" type="submit" ng-click="submitInfo()">保存</button>
+                                        <button class="btn btn-return" type="submit" onclick="javascript:history.go(-1);">返回</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                             <div class="col-md-2">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        </form>
+    </div>
+
+</div></body></html>

@@ -1,0 +1,43 @@
+
+<!-- saved from url=(0082)http://webapplayers.com/inspinia_admin-v2.7.1/Angular/views/common/navigation.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body><nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul side-navigation="" class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+
+                <div class="profile-element" uib-dropdown="">
+                    <img alt="image" class="img-circle" src="./img/profile_small.jpg">
+                    <a uib-dropdown-toggle="" href="http://webapplayers.com/inspinia_admin-v2.7.1/Angular/views/common/navigation.html">
+                            <span class="clear">
+                                <span class="block m-t-xs">
+                                    <strong class="font-bold">张笑</strong>
+                             </span>
+                                <span class="text-muted text-xs block">能管 <b class="caret"></b></span>
+                            </span>
+                    </a>
+                    <ul uib-dropdown-menu="" class="animated fadeInRight m-t-xs">
+                    </ul>
+                </div>
+                <div class="logo-element">
+                    At+
+                </div>
+            </li>
+            <li ng-class="{active: $state.includes(&#39;tables&#39;)}">
+                <a href="http://webapplayers.com/inspinia_admin-v2.7.1/Angular/views/common/navigation.html#"><i class="fa fa-table"></i> <span class="nav-label">{{ '基础信息' | translate }}</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes(&#39;tables&#39;)}">
+                    <li ui-sref-active="active"><a ui-sref="tables.ahathallan_modbus_value">通用Modbus数据点</a></li>
+                    <li ui-sref-active="active"><a ui-sref="tables.ahathallan_modbus_set">通用Modbus数据设置</a></li>
+                    <li ui-sref-active="active"><a ui-sref="tables.ahathallan_modbus_scheme_lst">Modbus连接方案</a></li>
+                </ul>
+            </li>
+            <li ng-class="{active: $state.includes(&#39;dashboards&#39;)}">
+                <a href="http://webapplayers.com/inspinia_admin-v2.7.1/Angular/views/common/navigation.html#"><i class="fa fa-table"></i> <span class="nav-label">{{ '设备监控' | translate }}</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes(&#39;dashboards&#39;)}">
+                    <li ui-sref-active="active"><a ui-sref="dashboards.ahathallan_modbus_device_grid">设备列表</a></li>
+                    <li ui-sref-active="active"><a ui-sref="dashboards.ahathallan_watch_dash">设备监控</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</nav></body></html>

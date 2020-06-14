@@ -1,0 +1,165 @@
+<!-- saved from url=(0083)http://webapplayers.com/inspinia_admin-v2.7.1/Angular/views/ecommerce_payments.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body><div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Modbus连接方案</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="http://webapplayers.com/inspinia_admin-v2.7.1/Angular/views/index.html">主页</a>
+            </li>
+            <li>
+                <a>基础信息</a>
+            </li>
+            <li class="active">
+                <strong>Modbus连接方案</strong>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight" ng-controller="ahathallan_modbus_scheme_address">
+    <div class="row">
+        <form method="get" class="form-horizontal">
+        <div class="col-lg-12" style="position: relative;min-height: 1px;padding-right: 5px;padding-left: 5px;">
+
+            <div class="ibox">
+                <div class="ibox-title">
+                    设备信息
+                </div>
+                <div class="ibox-content" style="padding:0px;">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-1">
+                            </div>
+                            <div class="col-lg-5" style="padding-bottom:20px;">
+                                <div class="contact-box" style="border: 0px solid #e7eaec;">
+                                    <div class="col-sm-4">
+                                        <div class="text-center">
+                                            <img alt="image" class="img-circle m-t-xs img-responsive" src="img/181_4.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-8" style="padding-top:10px;padding-left:50px;">
+                                        <h2><strong>{{Device_Name}}</strong></h2>
+                                        <p style="font-size:15px;"><i class="fa fa-map-marker"></i> {{Device_type}}</p>
+                                        <address  style="font-size:18px">
+                                            {{Device_info}}<br>
+                                        </address>
+                                         <div class="btn-group">
+                                            <a href="web#/tables/ahathallan_modbus_scheme_lst" class="btn btn-outline btn-primary"> 返回</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><div class="col-lg-12" style="position: relative;min-height: 1px;padding-right: 5px;padding-left: 5px;margin-top:-10px;">
+            <div class="ibox">
+                <div class="ibox-title">
+                    设备信息
+                </div>
+                <div class="ibox-content">
+                    <div class="panel-body">
+
+                        <div class="row" style="padding-top:30px;padding-bottom:30px;">
+                            <div class="col-md-1">
+
+                            </div>
+                            <div class="col-md-9">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">项目名称</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="Address_Name" placeholder="项目名称" ng-model="Address_Name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">项目编号</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="Address_Json" placeholder="项目编号" ng-model="Address_Json">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Modbus地址</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" touch-spin spin-options="spin_address" ng-model="Address">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">功能码</label>
+                                            <div class="col-sm-10">
+                                                <select class="form-control" ng-options="c.Function_no as c.Function_Value for c in Function_list" ng-model="Function_value">
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">数据类型</label>
+                                            <div class="col-sm-10">
+                                                <select class="form-control" ng-change="select_change();" ng-options="c.Data_type_no as c.Data_type_Value for c in Data_type_list" ng-model="Modbus_Data_type">
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">单位</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="Option_context" placeholder="个" ng-model="UOM">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" ng-show="is_option" >
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">选择项</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" name="Option_context" placeholder="选择项1,选择项2,选择项3" ng-model="Option_context">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top:30px;">
+                                    <!--                                    <div class="col-xs-2">-->
+                                    <!--                                        <button class="btn btn-primary" type="button" ng-click="loadInfo(1)">Load Data!</button>-->
+                                    <!--                                    </div>-->
+                                    <div class="col-xs-2">
+
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <button class="btn btn-primary" type="submit" ng-click="save_modbus_address_info()">保存</button>
+                                        <button class="btn btn-outline btn-primary" type="submit" ng-click="navitage_to_list()">返回</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+
+</div></body></html>

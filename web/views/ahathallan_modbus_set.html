@@ -1,0 +1,182 @@
+<!-- saved from url=(0083)http://webapplayers.com/inspinia_admin-v2.7.1/Angular/views/ecommerce_payments.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head><body><div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>通用Modbus RTU设置</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="http://webapplayers.com/inspinia_admin-v2.7.1/Angular/views/index.html">主页</a>
+            </li>
+            <li>
+                <a>基础信息</a>
+            </li>
+            <li class="active">
+                <strong>通用Modbus RTU设置</strong>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight" ng-controller="ahathallan_modbus_set">
+    <div class="row">
+        <form method="get" class="form-horizontal">
+        <div class="col-lg-12" style="position: relative;min-height: 1px;padding-right: 5px;padding-left: 5px;">
+            <div class="ibox-content m-b-sm border-bottom" style="padding:15px 10px 0px 20px;border-color: #e7eaec;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 3px 0 0;">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">串口号</label>
+                            <div class="col-sm-8">
+                                <select class="form-control" ng-options="c.Serial_no as c.Serial_Value for c in Serial_list" ng-model="Serial_value">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="col-xs-12">
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">站号</label>
+                                <div class="col-sm-8">
+                                    <input type="text" touch-spin spin-options="spin_BaudRate" ng-model="SlaveId">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">波特率</label>
+                            <div class="col-sm-6">
+                                <select class="form-control" ng-options="c.BaudRate_no as c.BaudRate_Value for c in BaudRate_list" ng-model="BaudRate_value">
+                                </select>
+                            </div>
+                            <label class="col-sm-2 control-label" style="margin-left:-24px;">bps</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">校验位</label>
+                                <div class="col-sm-8">
+                                    <select class="form-control" ng-options="c.Parity_no as c.Parity_Value for c in Parity_list" ng-model="Parity_value">
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">数据位</label>
+                                <div class="col-sm-8">
+                                    <select class="form-control" name="account">
+                                        <option>8</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">停止位</label>
+                                <div class="col-sm-8">
+                                    <select class="form-control" name="account">
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12" style="position: relative;min-height: 1px;padding-right: 5px;padding-left: 5px;">
+            <div class="ibox">
+                <div class="ibox-title">
+                    设备信息
+                </div>
+                <div class="ibox-content">
+                    <div class="panel-body">
+
+                        <div class="row" style="padding-top:30px;padding-bottom:30px;">
+                            <div class="col-md-1">
+
+                            </div>
+                            <div class="col-md-9">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Modbus地址</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" touch-spin spin-options="spin_address" ng-model="Address">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">功能码</label>
+                                            <div class="col-sm-10">
+                                                <select class="form-control" ng-options="c.Function_no as c.Function_Value for c in Function_list" ng-model="Function_value">
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">数据类型</label>
+                                            <div class="col-sm-10">
+                                                <select class="form-control" ng-change="select_change();" ng-options="c.Data_type_no as c.Data_type_Value for c in Data_type_list" ng-model="Data_type_value">
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" ng-show="is_float" >
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">设置值(float)</label>
+                                            <div class="col-sm-2">
+                                                <input id="demo2" type="text" name="demo1" touch-spin spin-options="spin_float" ng-model="Modbus_value">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" ng-show="is_int" >
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">设置值(int)</label>
+                                            <div class="col-sm-2">
+                                                <input id="demo3" type="text" name="demo1" touch-spin spin-options="spin_int" ng-model="Modbus_value">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top:30px;">
+                                    <!--                                    <div class="col-xs-2">-->
+                                    <!--                                        <button class="btn btn-primary" type="button" ng-click="loadInfo(1)">Load Data!</button>-->
+                                    <!--                                    </div>-->
+                                    <div class="col-xs-2">
+
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <button class="btn btn-success" type="submit" ng-click="modbus_once_get()">保存</button>
+                                        <button class="btn btn-return" type="submit" onclick="javascript:history.go(-1);">返回</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+
+</div></body></html>

@@ -1,0 +1,102 @@
+
+<!-- saved from url=(0088)http://webapplayers.com/inspinia_admin-v2.7.1/Angular/views/ecommerce_products_grid.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body>
+<style type="text/css">
+    .file .icon {
+        padding: 15px 10px;
+        text-align: center;
+    }
+</style>
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Modbus连接方案列表</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="http://webapplayers.com/inspinia_admin-v2.7.1/Angular/views/index.html">主页</a>
+            </li>
+            <li>
+                <a>基础信息</a>
+            </li>
+            <li class="active">
+                <strong>Modbus连接方案列表</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight" ng-controller="ahathallan_modbus_scheme_list">
+    <div class="row" style="margin-bottom: 15px;" ng-repeat="scheme in scheme_list" >
+        <div class="col-md-3 ng-scope" style="position: relative;min-height: 1px;padding-right: 5px;padding-left: 5px;">
+            <div class="ibox" style="margin-bottom: 3px;">
+                <div class="ibox-content product-box" style="width: 402px;">
+
+                    <div class="product-imitation" style="padding:0px">
+                        <img src={{scheme.Img_url}}>
+                    </div>
+                    <div class="product-desc">
+                                <span class="product-price">
+                                    运行
+                                </span>
+                        <small class="text-muted ng-binding">{{scheme.Device_type}}</small>
+                        <a ng-href="{{scheme.Device_url}}"  class="product-name ng-binding">{{scheme.Device_Name}}</a>
+
+
+
+                        <div class="small m-t-xs">
+                            {{scheme.Device_info}}
+                        </div>
+                        <div class="m-t text-righ">
+                            <a ng-href="{{scheme.Device_info_url}}" class="btn btn-xs btn-outline btn-primary">详情 <i class="fa fa-long-arrow-right"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9" style="position: relative;min-height: 1px;padding-right: 5px;padding-left: 5px;">
+            <div class="col-md-3" style="position: relative;min-height: 1px;padding-right: 5px;padding-left: 5px;" ng-repeat="scheme_address in scheme.Scheme_address_list">
+                <div class="ibox">
+                    <div class="ibox-content">
+                        <h4 style="margin-top:3px;margin-bottom:3px;">{{scheme_address.Address}}</h4>
+                        <h1 class="no-margins" style="padding-top:3px;padding-bottom:3px;">{{scheme_address.Address_Name}}</h1>
+                        <div class="stat-percent font-bold text-navy">{{scheme_address.Function_Name}}<i class="fa fa-crop"></i></div>
+                        <small>{{scheme_address.Modbus_Data_type_Name}}</small>
+                        <hr>
+                        <div class="m-t-sm">
+                            <div class="btn-group">
+                                <a ng-href="{{scheme_address.Device_address_url}}" class="btn btn-primary btn-sm"><i class="fa fa-shopping-cart"></i>修改</a>
+                                <a style="margin-left: 5px;" ng-click="delete_modbus_address_info(scheme_address.Address_No)" class="btn btn-white btn-sm"> 删除</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3" style="position: relative;min-height: 1px;padding-right: 5px;padding-left: 5px;">
+                <div class="file" style="margin-right: -5px;">
+                    <a ng-href="{{scheme.Device_address_url}}">
+                        <div class="icon" style="height:185px;">
+                            <i class="fa fa-plus" style="margin-top:40px;"></i>
+                        </div>
+                    </a>
+                </div>
+            <hr>
+        </div>
+    </div>
+    </div>
+    <div class="row" style="margin-bottom: 15px;">
+        <div class="col-md-3 ng-scope" style="position: relative;min-height: 1px;padding-right: 5px;padding-left: 5px;">
+            <div class="ibox">
+                <div class="file" style="margin-right: 5px;">
+                    <a  href="web#/tables/ahathallan_modbus_scheme_info">
+                        <div class="icon" style="height:245px;">
+                            <i class="fa fa-plus" style="margin-top:80px;"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body></html>

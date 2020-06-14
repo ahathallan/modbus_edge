@@ -1,0 +1,72 @@
+# web_socket
+Web_socket = "13836"
+
+# mqtt_ip
+Mqtt_ip = "localhost:1883"
+# mqtt_client_id
+Mqtt_client_id = "iot-main_13236"
+# mqtt_client_watch_id
+Mqtt_client_watch_id = "iot_watch_13236"
+
+# time_second
+Time_second = 5
+
+# web_folder
+Web_folder="./A090_Atom_Modbus/web/"
+
+# bolt_db_name
+Bolt_db_name="./A090_Atom_Modbus/app_block.db"
+
+# post_gres
+Post_gres_userName = "postgres"
+Post_gres_password = "pchx0000"
+Post_gres_ipAddrees = "localhost"
+Post_gres_port = 5432
+Post_gres_dbName = "postgres"
+
+#iot_equiment
+[[iot_equiment]]
+name = "XJWJC01"
+no ="05"
+
+[[iot_equiment]]
+name = "XJWJC02"
+no = "06"
+
+#device_mqtt_subInfo
+[[device_mqtt_subInfo]]
+mqtt_topic = "air_test"
+mqtt_len = 10
+mqtt_tag="air_dev_001"
+
+[[device_mqtt_subInfo]]
+mqtt_topic = "air"
+mqtt_len = 6
+mqtt_tag="air_dev_002"
+
+#Atom_Device_remote_equiment
+[[atom_Device_remote_equiment]]
+name = "air_dev_002_1"
+dev_name = "测量设备01"
+no = "06"
+east = 206.1687
+north =  1474.6636
+Up =  48.7498
+
+[[atom_Device_remote_equiment]]
+name = "air_dev_002_2"
+dev_name = "测量设备02"
+no = "06"
+east = 206.1687
+north =  1474.6636
+Up =  48.7498
+
+[[atom_Device_remote_equiment]]
+name = "air_dev_001"
+dev_name = "测量设备03"
+no ="05"
+east = 219.3686
+north = 1436.8574
+Up = 47.7881
+
+

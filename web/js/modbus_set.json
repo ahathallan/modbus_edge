@@ -1,0 +1,16 @@
+{
+  "desc": "Modbus设置信息",
+  "Serial_list": [
+    {"Serial_no":"COM1","Serial_Value":"COM1"},
+    {"Serial_no":"COM2","Serial_Value":"COM2"},
+    {"Serial_no":"COM3","Serial_Value":"COM3"},
+    {"Serial_no":"COM4","Serial_Value":"COM4"},
+    {"Serial_no":"COM5","Serial_Value":"COM5"},
+    {"Serial_no":"COM6","Serial_Value":"COM6"},
+    {"Serial_no":"COM7","Serial_Value":"COM7"},
+    {"Serial_no":"COM8","Serial_Value":"COM8"},
+    {"Serial_no":"/dev/ttyO1","Serial_Value":"/dev/ttyO1"},
+    {"Serial_no":"/dev/ttyO2","Serial_Value":"/dev/ttyO2"},
+    {"Serial_no":"/dev/ttyO3","Serial_Value":"/dev/ttyO3"}
+  ]
+}

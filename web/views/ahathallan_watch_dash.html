@@ -1,0 +1,54 @@
+<div class="row wrapper border-bottom white-bg page-heading ng-scope">
+    <div class="col-lg-10">
+        <h2>基础监控</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="/web#/tables/gnss_device_grid">主页</a>
+            </li>
+            <li>
+                <a>设备监控</a>
+            </li>
+            <li class="active">
+                <strong>设备监控</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content" ng-controller="ahathallan_watch_dash" style="padding: 20px 20px 50px;">
+    <div class="row">
+        <div class="col-lg-4"  style="height:330px;position: relative;min-height: 1px;padding-right: 5px;padding-left: 5px;padding-bottom: 0px">
+            <div class="ibox float-e-margins" style="margin-bottom: 5px;">
+                <div class="ibox-title">
+                    <h5>关键数据</h5>
+                </div>
+                <div class="ibox-content">
+                    <div class="panel-body"  style="height:220px;color: #777;font-size:28px;display: block;font-family: 'Helvetica Neue';font-weight: 100;">
+                        <div style="height: 50px;padding: 20px;"><span> CPU使用率：</span><span style="left:130px" class="no-margins Latitude">{{modbus_device_json.CPU_used}}%</span></div>
+                        <div style="height: 50px;padding: 20px;"><span> 内存使用率：</span><span style="left:130px" class="no-margins Longitude">{{modbus_device_json.mem_used}}%</span></div>
+                        <div style="height: 50px;padding: 20px;"><span> 总内存：</span><span style="left:130px" class="no-margins Height">{{modbus_device_json.total_memey}}b</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-4"  style="height:330px;position: relative;min-height: 1px;padding-right: 5px;padding-left: 5px;">
+            <div class="ibox float-e-margins" style="margin-bottom: 5px;">
+                <div class="ibox-title">
+                    <h5>消息</h5>
+                </div>
+                <div class="ibox-content ibox-heading" style="padding: 5px 15px 20px 20px;">
+                    <h3><i class="fa fa-envelope-o"></i> 新消息</h3>
+                    <small><i class="fa fa-tim"></i> 有0条新消息等待处理</small>
+                </div>
+                <div class="ibox-content" style="padding-top: 8px;height:182px;padding-bottom: 0px;">
+                    <div class="feed-activity-list">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
